@@ -1,22 +1,252 @@
 @import "tailwindcss";
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  html {
+    font-family: 'Inter', sans-serif;
   }
+ 
+.custom-radius {
+  border-radius: 50% 0%, 100% 70%, 0% 70%
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /******************** Colors *********************/
+
+  .bg-primary {
+    @apply bg-[#5F62E2];
+  }
+
+  .bg-primary-400 {
+    @apply bg-[#7f81e8];
+  }
+
+  .bg-primary-600 {
+    @apply bg-[#5658CB];
+  }
+
+  .bg-primary-300 {
+    @apply bg-[#cfd0f6]
+  }
+  .bg-primary-200 {
+    @apply bg-[#efeffc]
+  }
+
+  .bg-secondary {
+    @apply bg-[#2AB691];
+  }
+
+  /* Background Gray */
+  
+.bg-gray-700 {
+  @apply bg-[#808080]
 }
+.bg-gray-600 {
+  @apply bg-[#b2b2b2]
+}
+.bg-gray-400 {
+  @apply bg-[#f2f2f2]
+}
+.bg-gray {
+  @apply bg-[#1D1D1D]
+}
+  .text-gray {
+    @apply text-[#1D1D1D];
+  }
+
+  .text-danger {
+    @apply text-[#FF4E4E];
+  }
+
+  .text-success {
+    @apply text-[#90DA1];
+  }
+
+  .text-warning {
+    @apply text-[#FEB72F];
+  }
+
+  
+  }
+
+  .link-hover:hover {
+    color: #5F62E2
+  }
+  
+  animate,
+  a,
+  a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+
+  /******************** primary *********************/
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .text-primary {
+    color: #5F62E2
+  }
+  .text-primary-200 {
+    color: #efeffc
+  }
+  .text-primary-300 {
+    color: #cfd0f6
+  }
+  .text-primary-400 {
+    color: #7f81e8
+  }
+  .text-primary-600 {
+    color: #5658CB
+  }
+
+  /******************** Secondary *********************/
+  
+  .text-secondary-200 {
+    color: #eaf8f4
+  }
+  .text-secondary-300 {
+    color: #bfe9de
+  }
+  .text-secondary-400 {
+    color: #56c4a7
+  }
+  .text-secondary-600 {
+    color: #26a482
+  }
+  .text-secondary {
+    color: #2AB691
+  }
+  
+  
+  /******************** Gray *********************/
+  .text-gray-300 {
+    color: #fafafa
+  }
+  .text-gray-400 {
+    color: #f2f2f2
+  }
+  .text-gray-500 {
+    color: #e5e5e5
+  }
+  .text-gray-600 {
+    color: #b2b2b2
+  }
+  .text-gray-700 {
+    color: #808080
+  }
+  .text-gray-800 {
+    color: #333333
+  }
+  .text-gray {
+    color: #1D1D1D
+  }
+  
+  /******************** fontSize *********************/
+  
+  .text-8xl-custom {
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: -6px;
+    font-weight: 500;
+  }
+  .text-7xl-custom {
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -4.5px;
+    font-weight: 600;
+  }
+  .text-6xl-custom {
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+  }
+  .text-5xl-custom {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1.600000023841858px;
+    font-weight: 500;
+  }
+  .text-4xl-custom {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.2000000476837158px;
+    font-weight: 500;
+  }
+  .text-3xl-custom {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.800000011920929px;
+    font-weight: 500;
+  }
+  .text-2xl-custom {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: 400;
+  }
+  .text-xl-custom {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: 400;
+  }
+  .text-lg-custom {
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: -0.800000011920929px;
+    font-weight: 400;
+  }
+  .text-base-custom {
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -0.699999988079071px;
+    font-weight: 400;
+  }
+  .text-sm-custom {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: -0.6000000238418579px;
+    font-weight: 400;
+  }
+  .text-caption1-custom {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.6000000238418579px;
+    font-weight: 400;
+  }
+  .text-caption2-custom {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.30000001192092896px;
+    font-weight: 400;
+  }
+  .text-caption3-custom {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+  }
+  .text-caption4-custom {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.20000000298023224px;
+    font-weight: 400;
+  }
+  
+  /******************** Border Radius *********************/
+
+  .rounded-default {
+    border-radius: 14px;
+  }
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  

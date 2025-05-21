@@ -1,8 +1,18 @@
+'use client'
+import { Footer } from "./ui/components/Naviguation/Footer";
+import { Nav } from "./ui/components/Naviguation/Nav";
+// import Seo from "./ui/components/Seo/Seo";
 
-export default function Home() {
+
+
+
+export default function Home() { 
   return (
-    <div className="flex items-center justify-center text-blue-500">
-      Coders Monkey App Clone
-    </div>
+
+    <>
+    {/* <Seo title="Clone Coders Monkey" description="Mon premier application complet" /> */}
+    <Nav />
+    <Footer />
+    </>
   );
 }
