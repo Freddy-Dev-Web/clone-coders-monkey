@@ -1,6 +1,6 @@
 import { LinkTypes } from "@//lib/Link-Type"
 import { AppLinks } from "@//types/AppLinks"
-import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri"
+import { RiFacebookBoxFill, RiLinkedinFill, RiYoutubeFill } from "react-icons/ri"
 
   const FooterApplicationLinks: AppLinks[] = [
     {
@@ -86,9 +86,9 @@ import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri"
     },
     {
         label: "Slack",
-        baseUrl: "https:slack.com",
+        baseUrl: "https:facebook.com",
         type: "externe",
-        icon: RiSlackFill 
+        icon: RiFacebookBoxFill 
     }
 ]
 

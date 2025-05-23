@@ -9,7 +9,7 @@ interface Props {
 
 const Seo = ({}:Props) => {
   return (
-    <>Seo</>
+    <></>
   )
 }
 

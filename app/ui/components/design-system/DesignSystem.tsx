@@ -4,16 +4,19 @@ import { Avatar } from "../../design-system/avatar/Avatar"
 import Button from "../../design-system/Button/Button"
 import { Logo } from "../../design-system/logo/Logo"
 import { Spinner } from "../../design-system/spinner/Spinner"
-import { Nav } from "../Naviguation/Nav"
 import Seo from "../Seo/Seo"
+import { Layout } from "../Layout/Layout"
 
 export const DesignSystem = () => {
     return (
         <>
-        <Seo title="Freddy Mandaba" description="Mon premier projet complet" />
-        <Nav />
+        <Seo 
+        title="Freddy Mandaba" 
+        description="Mon premier projet complet" 
+        />
         
-            <div className="space-y-4 py-10 px-10">
+            <Layout>
+              <div className="space-y-4 py-10 px-10">
         
             <div className=" flex items-center space-x-4 py-10 px-5">
         
@@ -84,6 +87,7 @@ export const DesignSystem = () => {
             </div>
             
             </div>
+            </Layout>
         
             </>
     )
